@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { Phone, CheckCircle, Clock,MessageCircle,  Star,
+import { Phone, CheckCircle, Clock , Star,
   Heart,
   Sparkles,
   Moon,
   Leaf, } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import Cards from "@/components/Cards";
 
 export const metadata = {
@@ -30,9 +31,7 @@ export default function AromatherapyMassagePage() {
                         {/* Content */}
                         <div className="relative z-10 max-w-7xl mx-auto w-full px-6 lg:px-8 text-center">
                           <div className="max-w-2xl mx-auto">
-                            <span className="inline-flex items-center rounded-full bg-[#4D3F33] px-5 py-2 text-sm font-semibold text-white shadow-lg">
-                             Happy Ending Massage
-                            </span>
+                           
                 
                             <h1 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
                               Expert Staff
@@ -47,27 +46,25 @@ export default function AromatherapyMassagePage() {
                             </p>
                 
                             {/* Buttons */}
-                            <div className="mt-10 flex flex-row flex-wrap justify-center gap-4">
-                              {/* Call Button */}
-                              <a
-                                href="tel:+919152289119"
-                                className="inline-flex items-center justify-center gap-3 rounded-full bg-[#4D3F33] px-8 py-4 text-white font-semibold shadow-lg transition-all duration-300 hover:bg-[#7d1f26] hover:scale-105"
-                              >
-                                <Phone size={20} />
-                                Call Now
-                              </a>
-                
-                              {/* WhatsApp Button */}
-                              <a
-                                href="https://wa.me/919152289119"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center gap-3 rounded-full border-2 border-green-500 bg-green-600 px-8 py-4 text-white font-semibold shadow-lg transition-all duration-300 hover:bg-green-700 hover:scale-105"
-                              >
-                                <MessageCircle size={20} />
-                                WhatsApp
-                              </a>
-                            </div>
+                           <div className="mt-10 flex items-center justify-center gap-3 sm:gap-5">
+  <a
+    href="tel:+919152289119"
+    className="flex h-14 w-[145px] sm:w-[180px] items-center justify-center gap-2 rounded-full bg-[#4D3F33] text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#7d1f26]"
+  >
+    <Phone size={18} />
+    <span>Call Now</span>
+  </a>
+
+  <a
+    href="https://wa.me/919152289119"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex h-14 w-[145px] sm:w-[180px] items-center justify-center gap-2 rounded-full bg-[#25D366] text-white font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#1fb85a]"
+  >
+    <FaWhatsapp size={20} />
+    <span>WhatsApp</span>
+  </a>
+</div>
                 
                           
                           </div>
@@ -320,3 +317,5 @@ export default function AromatherapyMassagePage() {
     </main>
   );
 }
+
+

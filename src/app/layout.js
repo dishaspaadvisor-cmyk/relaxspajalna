@@ -53,9 +53,9 @@ export const metadata = {
   },
 
   icons: {
-    icon: [
-      { url: "/Relaxlogo.webp", type: "image/webp" },
-    ],
+    icon: "/logoicon.png",
+    shortcut: "/logoicon.png",
+    apple: "/logoicon.png",
   },
 };
 
@@ -64,6 +64,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="h-full antialiased">
       <head>
         <meta name="google-site-verification" content="oLLOBdLfNEuQth2aYteoPaUDfgxvf7nKxugzIvEP594" />
+      
       </head>
       <body className="min-h-full flex flex-col">
         <Navbar />

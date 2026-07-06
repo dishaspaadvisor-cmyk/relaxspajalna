@@ -14,6 +14,10 @@ const services = [
   { name: "Happy Ending Massage", slug: "happy-ending-massage" },
   { name: "Couples Massage", slug: "couples-massage" },
   { name: "Potli Massage", slug: "potli-massage" },
+  { name: "Female to Male Massage", slug: "female-to-male-massage" },
+  { name: "Sandwich Massage", slug: "sandwich-massage" },
+  { name: "Hot Stone Massage", slug: "hotstone-massage" },
+  { name: "Four Hand Massage", slug: "four-hand-massage" },
 ];
 
 const keywords = [
